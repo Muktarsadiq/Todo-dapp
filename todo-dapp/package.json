@@ -11,5 +11,8 @@
   "dependencies": {
     "ethers": "^5.6.1",
     "next": "^13.4.19"
+  },
+  "devDependencies": {
+    "eslint": "^8.48.0"
   }
 }
