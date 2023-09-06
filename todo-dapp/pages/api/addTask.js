@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 
-import * as Constants from "../../Utils/config";
+import * as Constants from "../../utils/config";
 
 
 async function handler(req, res) {

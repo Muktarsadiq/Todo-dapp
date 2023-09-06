@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css';
 import { ethers } from 'ethers';
-import * as Constants from "../Utils/config"
+import * as Constants from "../utils/config"
 
 function App() {
   const [task, setTask] = useState('');
