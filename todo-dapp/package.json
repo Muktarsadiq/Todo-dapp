@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ethers": "^5.6.1",
+    "ethers": "^5.7.2",
     "next": "^13.4.19"
   },
   "devDependencies": {
