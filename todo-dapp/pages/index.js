@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css';
 import { ethers } from 'ethers';
+import { providers } from "ethers"
 import * as Constants from "../utils/config"
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
 
   const fetchTasks = async () => {
     try {
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
       const signer = provider.getSigner();
       const contractInstance = new ethers.Contract(Constants.contractAddress, Constants.contractAbi, signer);
 
@@ -59,7 +60,7 @@ function App() {
         throw new Error("Metamask not found");
       }
 
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
       const signer = provider.getSigner();
       const contractInstance = new ethers.Contract(Constants.contractAddress, Constants.contractAbi, signer);
 
@@ -88,7 +89,7 @@ function App() {
         throw new Error("Metamask not found");
       }
 
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
       const signer = provider.getSigner();
       const contractInstance = new ethers.Contract(Constants.contractAddress, Constants.contractAbi, signer);
 
@@ -110,7 +111,7 @@ function App() {
         throw new Error("Metamask not found");
       }
 
-      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const provider = new ethers.providers.Web3Provider(window.ethereum)
       const signer = provider.getSigner();
       const contractInstance = new ethers.Contract(Constants.contractAddress, Constants.contractAbi, signer);
 
